@@ -44,8 +44,8 @@ class TrackObject:
             # need to reset so camera center as (0,0)
             self.coords = (x - self.width/2,
                            y - self.height/2,
-                           x+w-self.width/2,
-                           y+h-self.height/2)
+                           x + w - self.width/2,
+                           y + h - self.height/2)
             print('camera centroid centered', self.coords)
             cv2.imshow('Tracking', frame)
             if cv2.waitKey(1) & 0xFF == ord('q'):
